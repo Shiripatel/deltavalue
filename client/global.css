@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 26% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 26% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 26% 14%;
+
+    --primary: 197 76% 17%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 39 77% 55%;
+    --secondary-foreground: 220 26% 14%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 197 76% 17%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+
+    --warning: 39 77% 55%;
+    --warning-foreground: 220 26% 14%;
+
+    --info: 197 76% 17%;
+    --info-foreground: 0 0% 98%;
+
+    --ai-score-high: 142 71% 45%;
+    --ai-score-medium: 39 77% 55%;
+    --ai-score-low: 0 84.2% 60.2%;
+
+    --chart-primary: 197 76% 17%;
+    --chart-secondary: 39 77% 55%;
+    --chart-accent: 142 71% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 26% 14%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 30% 18%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 30% 18%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 197 76% 60%;
+    --primary-foreground: 220 26% 14%;
+
+    --secondary: 39 77% 65%;
+    --secondary-foreground: 220 26% 14%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 142 71% 55%;
+    --accent-foreground: 220 26% 14%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 197 76% 60%;
+
+    --success: 142 71% 55%;
+    --success-foreground: 220 26% 14%;
+
+    --warning: 39 77% 65%;
+    --warning-foreground: 220 26% 14%;
+
+    --info: 197 76% 60%;
+    --info-foreground: 220 26% 14%;
+
+    --ai-score-high: 142 71% 55%;
+    --ai-score-medium: 39 77% 65%;
+    --ai-score-low: 0 62.8% 50.6%;
+
+    --chart-primary: 197 76% 60%;
+    --chart-secondary: 39 77% 65%;
+    --chart-accent: 142 71% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
